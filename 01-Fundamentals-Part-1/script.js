@@ -30,27 +30,27 @@
 // console.log(lastName);
 
 // //code for Basic Operator
-const currentYear = 2021;
-const ageIshan = currentYear - 1996;
-const ageVed = currentYear - 2004;
-console.log(ageIshan, ageVed);
-console.log(ageIshan * 2, ageIshan / 2, 2 ** 3);
+// const currentYear = 2021;
+// const ageIshan = currentYear - 1996;
+// const ageVed = currentYear - 2004;
+// console.log(ageIshan, ageVed);
+// console.log(ageIshan * 2, ageIshan / 2, 2 ** 3);
 // 2**3 means 2 to the power 2
-const firstName = "Ishan";
-const lastName = "Pandya";
-console.log(firstName + " " + lastName);
-let x = 10 + 5;
-console.log(x);
-x += 10;
-console.log(x);
-x *= 10;
-console.log(x);
+// const firstName = "Ishan";
+// const lastName = "Pandya";
+// console.log(firstName + " " + lastName);
+// let x = 10 + 5;
+// console.log(x);
+// x += 10;
+// console.log(x);
+// x *= 10;
+// console.log(x);
 // comparison operators
-console.log(ageIshan > ageVed);
-console.log(ageVed >= 18);
-const isFullAge = ageVed >= 18;
-console.log(isFullAge);
+// console.log(ageIshan > ageVed);
+// console.log(ageVed >= 18);
+// const isFullAge = ageVed >= 18;
+// console.log(isFullAge);
 
-let y, z;
-y = z = 25 - 10 - 5;
-console.log(x, y);
+// let y, z;
+// y = z = 25 - 10 - 5;
+// console.log(x, y);

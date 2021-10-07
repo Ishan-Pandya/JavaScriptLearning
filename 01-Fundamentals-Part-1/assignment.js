@@ -2,8 +2,8 @@
 
 // //code for values and variables
 // let country = "Canada";
-let continent = "North America";
-let population = 38.01;
+// let continent = "North America";
+// let population = 38.01;
 // console.log(country);
 // console.log(continent);
 // console.log(population);
@@ -17,24 +17,24 @@ let population = 38.01;
 // console.log(typeof country);
 
 // //code for let, const, var
-language = "English";
+// language = "English";
 // const country = "Canada";
 // const continent = "North America";
 // const isIsLand = false;
 // isIsLand = true;
 
 // //code for Basic Operator
-const country = "Canada";
-console.log(population / 2);
-population++;
-console.log(population > 6);
-console.log(population > 33);
-let describe =
-  country +
-  " is in " +
-  continent +
-  " ,and its " +
-  population +
-  " million speaks " +
-  language;
-console.log(describe);
+// const country = "Canada";
+// console.log(population / 2);
+// population++;
+// console.log(population > 6);
+// console.log(population > 33);
+// let describe =
+//   country +
+//   " is in " +
+//   continent +
+//   " ,and its " +
+//   population +
+//   " million speaks " +
+//   language;
+// console.log(describe);

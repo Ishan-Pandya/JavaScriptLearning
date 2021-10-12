@@ -61,15 +61,28 @@
 // console.log(Ishan);
 
 // //code for If/Else statement
-const age = 19;
-const isOldEnough = age >= 18;
+// const age = 19;
+// const isOldEnough = age >= 18;
 
-if (isOldEnough) {
-  console.log("You can start driving license 🚗");
-  0;
-} else {
-  const yearsLeft = 18 - age;
-  console.log(
-    `You can not start driving, and need to wait for ${yearsLeft} years.`
-  );
-}
+// if (isOldEnough) {
+//   console.log("You can start driving license 🚗");
+//   0;
+// } else {
+//   const yearsLeft = 18 - age;
+//   console.log(
+//     `You can not start driving, and need to wait for ${yearsLeft} years.`
+//   );
+// }
+
+// //code for type conversion
+const inputYear = "1991";
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(String(23), 23);
+// there are five falsy value : 0 , ' ' , undefined, null, NaN
+console.log(boolean(0));
+console.log(boolean(undefined));
+console.log(boolean("Ishan"));
+console.log(boolean());
+console.log(boolean(" "));

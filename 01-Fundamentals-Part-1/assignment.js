@@ -47,10 +47,10 @@ let population = 38.01;
 // console.log(describe);
 
 // // //code for IF Else
-if (population > 33.0) {
-  console.log(`${country}'s population is above average'`);
-} else {
-  console.log(
-    `${country}'s population is ${33 - population} million below average.'`
-  );
-}
+// if (population > 33.0) {
+//   console.log(`${country}'s population is above average'`);
+// } else {
+//   console.log(
+//     `${country}'s population is ${33 - population} million below average.'`
+//   );
+// }

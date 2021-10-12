@@ -66,6 +66,7 @@ const isOldEnough = age >= 18;
 
 if (isOldEnough) {
   console.log("You can start driving license 🚗");
+  0;
 } else {
   const yearsLeft = 18 - age;
   console.log(

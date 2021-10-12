@@ -54,3 +54,8 @@
 // let y, z;
 // y = z = 25 - 10 - 5;
 // console.log(x, y);
+
+// //code for Template literals
+let firstName = "Ishan Pandya";
+const Ishan = `I am ${firstName}`;
+console.log(Ishan);

@@ -56,6 +56,19 @@
 // console.log(x, y);
 
 // //code for Template literals
-let firstName = "Ishan Pandya";
-const Ishan = `I am ${firstName}`;
-console.log(Ishan);
+// let firstName = "Ishan Pandya";
+// const Ishan = `I am ${firstName}`;
+// console.log(Ishan);
+
+// //code for If/Else statement
+const age = 19;
+const isOldEnough = age >= 18;
+
+if (isOldEnough) {
+  console.log("You can start driving license 🚗");
+} else {
+  const yearsLeft = 18 - age;
+  console.log(
+    `You can not start driving, and need to wait for ${yearsLeft} years.`
+  );
+}

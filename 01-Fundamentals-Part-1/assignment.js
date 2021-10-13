@@ -24,8 +24,8 @@
 // isIsLand = true;
 
 // //code for Basic Operator
-const country = "Canada";
-let population = 38.01;
+// const country = "Canada";
+// let population = 38.01;
 // console.log(population / 2);
 // population++;
 // let continent = "North America";
@@ -64,3 +64,15 @@ let population = 38.01;
 // } else if (numNeighbours > 1) {
 //   console.log(`More than 1 border`);
 // }
+
+// // //code for logical operators
+let country = "Canada";
+let population = 38.01;
+let language = "English";
+let isIsland = false;
+
+if (language == "English" && population < 50 && isIsland == false) {
+  console.log(`You should live in ${country}`);
+} else {
+  console.log(`${country} does not meet your criteria`);
+}

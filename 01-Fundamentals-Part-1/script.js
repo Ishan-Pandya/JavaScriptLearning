@@ -87,18 +87,38 @@
 // console.log(Boolean());
 // console.log(Boolean(" "));
 
-const age = 18;
-if (age === 18) console.log("you just became an adult");
+// //code for else if ladder and equality sign
+// const age = 18;
+// if (age === 18) console.log("you just became an adult");
+// const fav = Number(prompt("Type in your fav number"));
+// if (fav == 21) {
+//   console.log("Cool! 21 is an amazing number!");
+// } else if (fav == 18) {
+//   console.log(
+//     "This is the age when you are allowed to appear for driver license"
+//   );
+// } else if (fav == 23) {
+//   console.log("Its time to have some fun!");
+// } else {
+//   console.log(`you chose ${fav} number`);
+// }
 
-const fav = Number(prompt("Type in your fav number"));
-if (fav == 21) {
-  console.log("Cool! 21 is an amazing number!");
-} else if (fav == 18) {
-  console.log(
-    "This is the age when you are allowed to appear for driver license"
-  );
-} else if (fav == 23) {
-  console.log("Its time to have some fun!");
+// //code for conditional operators
+
+const hasDriverLicense = true;
+const hasGoodVision = false;
+
+if (hasDriverLicense && hasGoodVision) {
+  console.log(`Sarah is able to drive`);
 } else {
-  console.log(`you chose ${fav} number`);
+  console.log(`Sarah can not drive`);
+}
+
+const isTired = true;
+console.log(hasDriverLicense && hasGoodVision && isTired);
+
+if (hasDriverLicense && hasGoodVision && !isTired) {
+  console.log(`Sarah is able to drive`);
+} else {
+  console.log(`Sarah wont be able to drive`);
 }

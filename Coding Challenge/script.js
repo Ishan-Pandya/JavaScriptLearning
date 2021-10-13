@@ -62,5 +62,5 @@ if (Dolphin > Koalas) {
     console.log(`Teams does not have more than 100 points`);
   }
 } else {
-  console.log(`There is some problem with the results`);
+  console.log(`No One wins the game`);
 }

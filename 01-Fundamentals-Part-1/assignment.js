@@ -66,13 +66,13 @@
 // }
 
 // // //code for logical operators
-let country = "Canada";
-let population = 38.01;
-let language = "English";
-let isIsland = false;
+// let country = "Canada";
+// let population = 38.01;
+// let language = "English";
+// let isIsland = false;
 
-if (language == "English" && population < 50 && isIsland == false) {
-  console.log(`You should live in ${country}`);
-} else {
-  console.log(`${country} does not meet your criteria`);
-}
+// if (language == "English" && population < 50 && isIsland == false) {
+//   console.log(`You should live in ${country}`);
+// } else {
+//   console.log(`${country} does not meet your criteria`);
+// }

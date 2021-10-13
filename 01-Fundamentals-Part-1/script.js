@@ -104,21 +104,66 @@
 // }
 
 // //code for conditional operators
+// const hasDriverLicense = true;
+// const hasGoodVision = false;
 
-const hasDriverLicense = true;
-const hasGoodVision = false;
+// if (hasDriverLicense && hasGoodVision) {
+//   console.log(`Sarah is able to drive`);
+// } else {
+//   console.log(`Sarah can not drive`);
+// }
 
-if (hasDriverLicense && hasGoodVision) {
-  console.log(`Sarah is able to drive`);
-} else {
-  console.log(`Sarah can not drive`);
+// const isTired = true;
+// console.log(hasDriverLicense && hasGoodVision && isTired);
+
+// if (hasDriverLicense && hasGoodVision && !isTired) {
+//   console.log(`Sarah is able to drive`);
+// } else {
+//   console.log(`Sarah wont be able to drive`);
+// }
+
+// //code for Switch case
+
+const day = "tuesday";
+
+switch (day) {
+  case "monday":
+    console.log("plane course structure");
+    console.log("Go to coding meetup");
+    break;
+  case "tuesday":
+    console.log("Prepare theory videos");
+    break;
+  case "wednesday":
+    console.log("Today is Wednesday");
+    break;
+  case "thursday":
+    console.log("Today is thursday");
+    break;
+  case "friday":
+    console.log("this is friday");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("yyeeeyyyyy enjoy the weekend");
+    break;
+  default:
+    console.log("Not a valid day");
 }
 
-const isTired = true;
-console.log(hasDriverLicense && hasGoodVision && isTired);
-
-if (hasDriverLicense && hasGoodVision && !isTired) {
-  console.log(`Sarah is able to drive`);
+if (day === "monday") {
+  console.log("plane course structure");
+  console.log("Go to coding meetup");
+} else if (day === "tuesday") {
+  console.log("Prepare theory videos");
+} else if (day === "wednesday") {
+  console.log("Today is Wednesday");
+} else if (day === "thursday") {
+  console.log("Today is thursday");
+} else if (day === "friday") {
+  console.log("Today is friday");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("yeeeyyyyyyy enjoy your weekend");
 } else {
-  console.log(`Sarah wont be able to drive`);
+  console.log("Not a valid day.");
 }

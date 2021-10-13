@@ -75,14 +75,30 @@
 // }
 
 // //code for type conversion
-const inputYear = "1991";
-console.log(Number(inputYear), inputYear);
-console.log(Number(inputYear) + 18);
+// const inputYear = "1991";
+// console.log(Number(inputYear), inputYear);
+// console.log(Number(inputYear) + 18);
 
-console.log(String(23), 23);
-// there are five falsy value : 0 , ' ' , undefined, null, NaN
-console.log(boolean(0));
-console.log(boolean(undefined));
-console.log(boolean("Ishan"));
-console.log(boolean());
-console.log(boolean(" "));
+// console.log(String(23), 23);
+// // there are five falsy value : 0 , ' ' , undefined, null, NaN
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean("Ishan"));
+// console.log(Boolean());
+// console.log(Boolean(" "));
+
+const age = 18;
+if (age === 18) console.log("you just became an adult");
+
+const fav = Number(prompt("Type in your fav number"));
+if (fav == 21) {
+  console.log("Cool! 21 is an amazing number!");
+} else if (fav == 18) {
+  console.log(
+    "This is the age when you are allowed to appear for driver license"
+  );
+} else if (fav == 23) {
+  console.log("Its time to have some fun!");
+} else {
+  console.log(`you chose ${fav} number`);
+}

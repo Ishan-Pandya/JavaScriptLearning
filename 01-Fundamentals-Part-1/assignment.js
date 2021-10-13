@@ -54,3 +54,13 @@ let population = 38.01;
 //     `${country}'s population is ${33 - population} million below average.'`
 //   );
 // }
+
+// // //code for equality operators
+const numNeighbours = Number(
+  prompt("How many neighbour countries does your country have?")
+);
+if (numNeighbours === 1) {
+  console.log(`only one border`);
+} else if (numNeighbours > 1) {
+  console.log(`More than 1 border`);
+}

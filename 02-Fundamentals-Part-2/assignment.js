@@ -15,21 +15,29 @@
 
 //  //  ***********Code for functions declaration***********
 // function declaration
-function percentageOfWorld1(population) {
-  return population / 79;
-}
-const India1 = percentageOfWorld1(1380);
-const China1 = percentageOfWorld1(1440);
-const UnitedS1 = percentageOfWorld1(329.5);
+// function percentageOfWorld1(population) {
+//   return population / 79;
+// }
+// const India1 = percentageOfWorld1(1380);
+// const China1 = percentageOfWorld1(1440);
+// const UnitedS1 = percentageOfWorld1(329.5);
 
-console.log(India1, China1, UnitedS1);
+// console.log(India1, China1, UnitedS1);
 
-// Function Expression
-const percentageOfWorld2 = function (population) {
-  return population / 79;
-};
-const India2 = percentageOfWorld2(1380);
-const China2 = percentageOfWorld2(1440);
-const UnitedS2 = percentageOfWorld2(329.5);
+// // Function Expression
+// const percentageOfWorld2 = function (population) {
+//   return population / 79;
+// };
+// const India2 = percentageOfWorld2(1380);
+// const China2 = percentageOfWorld2(1440);
+// const UnitedS2 = percentageOfWorld2(329.5);
+
+// console.log(India2, China2, UnitedS2);
+
+//  //  ***********Code for Arrow functions***********
+const percentageOfWorld1 = (population) => population / 79;
+const India2 = percentageOfWorld1(1380);
+const China2 = percentageOfWorld1(1440);
+const UnitedS2 = percentageOfWorld1(329.5);
 
 console.log(India2, China2, UnitedS2);

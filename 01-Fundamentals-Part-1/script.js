@@ -124,46 +124,75 @@
 
 // //code for Switch case
 
-const day = "tuesday";
+// const day = "tuesday";
 
-switch (day) {
-  case "monday":
-    console.log("plane course structure");
-    console.log("Go to coding meetup");
-    break;
-  case "tuesday":
-    console.log("Prepare theory videos");
-    break;
-  case "wednesday":
-    console.log("Today is Wednesday");
-    break;
-  case "thursday":
-    console.log("Today is thursday");
-    break;
-  case "friday":
-    console.log("this is friday");
-    break;
-  case "saturday":
-  case "sunday":
-    console.log("yyeeeyyyyy enjoy the weekend");
-    break;
-  default:
-    console.log("Not a valid day");
+// switch (day) {
+//   case "monday":
+//     console.log("plane course structure");
+//     console.log("Go to coding meetup");
+//     break;
+//   case "tuesday":
+//     console.log("Prepare theory videos");
+//     break;
+//   case "wednesday":
+//     console.log("Today is Wednesday");
+//     break;
+//   case "thursday":
+//     console.log("Today is thursday");
+//     break;
+//   case "friday":
+//     console.log("this is friday");
+//     break;
+//   case "saturday":
+//   case "sunday":
+//     console.log("yyeeeyyyyy enjoy the weekend");
+//     break;
+//   default:
+//     console.log("Not a valid day");
+// }
+
+// if (day === "monday") {
+//   console.log("plane course structure");
+//   console.log("Go to coding meetup");
+// } else if (day === "tuesday") {
+//   console.log("Prepare theory videos");
+// } else if (day === "wednesday") {
+//   console.log("Today is Wednesday");
+// } else if (day === "thursday") {
+//   console.log("Today is thursday");
+// } else if (day === "friday") {
+//   console.log("Today is friday");
+// } else if (day === "saturday" || day === "sunday") {
+//   console.log("yeeeyyyyyyy enjoy your weekend");
+// } else {
+//   console.log("Not a valid day.");
+// }
+
+// //code for statements and expression
+// Expressions
+3 + 4;
+1991;
+true && false && !false;
+// statement
+if (23 > 10) {
+  const str = "23 is bigger";
 }
 
-if (day === "monday") {
-  console.log("plane course structure");
-  console.log("Go to coding meetup");
-} else if (day === "tuesday") {
-  console.log("Prepare theory videos");
-} else if (day === "wednesday") {
-  console.log("Today is Wednesday");
-} else if (day === "thursday") {
-  console.log("Today is thursday");
-} else if (day === "friday") {
-  console.log("Today is friday");
-} else if (day === "saturday" || day === "sunday") {
-  console.log("yeeeyyyyyyy enjoy your weekend");
+// //code for conditional operator
+const age = 23;
+age >= 18
+  ? console.log(`I like to drink wine `)
+  : console.log(`I like to drink water`);
+
+const drink = age >= 18 ? "Wine" : "Water";
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+  drink2 = "Wine";
 } else {
-  console.log("Not a valid day.");
+  drink2 = "Water";
 }
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? "Wine" : "Water"}`);

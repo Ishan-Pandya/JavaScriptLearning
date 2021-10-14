@@ -32,7 +32,7 @@
 //   console.log(`John's BMI is (${johnBMI}) `);
 // }
 
-// Third Challenge
+// // Third Challenge
 // let Dolphin, Koalas;
 // Dolphin = (96 + 108 + 89) / 3;
 // Koalas = (88 + 91 + 110) / 3;
@@ -65,10 +65,29 @@
 //   console.log(`No One wins the game`);
 // }
 
-// Fourth Challenge
+// // Fourth Challenge
 // let bill, tip;
 // bill = 275;
 // tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 // console.log(
 //   `The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`
 // );
+
+// // // ********** Challenge part two ********** // // //
+const calcAverage = (score1, score2, score3) => {
+  return (score1 + score2 + score3) / 3;
+};
+const avgDolphins = calcAverage(85, 54, 41);
+const avgKoalas = calcAverage(23, 34, 27);
+
+function checkWinner(avgDolphins, avgKoalas) {
+  if (avgDolphins > 2 * avgKoalas) {
+    return `Dolphins win (${avgDolphins} vs. ${avgKoalas})`;
+  } else if (avgKoalas > 2 * avgDolphins) {
+    return `Koalas win (${avgKoalas} vs. ${avgDolphins})`;
+  } else {
+    return `No one wins the trophy.`;
+  }
+}
+
+console.log(checkWinner(avgDolphins, avgKoalas));

@@ -170,29 +170,29 @@
 
 // //code for statements and expression
 // Expressions
-3 + 4;
-1991;
-true && false && !false;
-// statement
-if (23 > 10) {
-  const str = "23 is bigger";
+// 3 + 4;
+// 1991;
+// true && false && !false;
+// // statement
+// if (23 > 10) {
+//   const str = "23 is bigger";
 }
 
 // //code for conditional ternary operator
-const age = 23;
-age >= 18
-  ? console.log(`I like to drink wine `)
-  : console.log(`I like to drink water`);
+// const age = 23;
+// age >= 18
+//   ? console.log(`I like to drink wine `)
+//   : console.log(`I like to drink water`);
 
-const drink = age >= 18 ? "Wine" : "Water";
-console.log(drink);
+// const drink = age >= 18 ? "Wine" : "Water";
+// console.log(drink);
 
-let drink2;
-if (age >= 18) {
-  drink2 = "Wine";
-} else {
-  drink2 = "Water";
-}
-console.log(drink2);
+// let drink2;
+// if (age >= 18) {
+//   drink2 = "Wine";
+// } else {
+//   drink2 = "Water";
+// }
+// console.log(drink2);
 
-console.log(`I like to drink ${age >= 18 ? "Wine" : "Water"}`);
+// console.log(`I like to drink ${age >= 18 ? "Wine" : "Water"}`);

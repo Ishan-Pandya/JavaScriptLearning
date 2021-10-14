@@ -78,6 +78,6 @@ let population = 38.01;
 // }
 
 // // //code for conditional ternary operators
-console.log(
-  `${country}s population is ${population >= 33 ? "above" : "below"} average`
-);
+// console.log(
+//   `${country}s population is ${population >= 33 ? "above" : "below"} average`
+// );

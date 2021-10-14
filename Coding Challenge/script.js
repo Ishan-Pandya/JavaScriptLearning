@@ -33,34 +33,42 @@
 // }
 
 // Third Challenge
-let Dolphin, Koalas;
-Dolphin = (96 + 108 + 89) / 3;
-Koalas = (88 + 91 + 110) / 3;
-console.log(Dolphin);
-console.log(Koalas);
+// let Dolphin, Koalas;
+// Dolphin = (96 + 108 + 89) / 3;
+// Koalas = (88 + 91 + 110) / 3;
+// console.log(Dolphin);
+// console.log(Koalas);
 
-if (Dolphin > Koalas) {
-  if (Dolphin >= 100) {
-    console.log(`Winner is Dolphin`);
-  } else {
-    console.log(
-      `Dolphin has more average score than Koalas but does not exceed 100 points`
-    );
-  }
-} else if (Koalas > Dolphin) {
-  if (Koalas >= 100) {
-    console.log(`Winner is Koalas`);
-  } else {
-    console.log(
-      `Koalas has more average score than Dolphin but does not exceed 100 points`
-    );
-  }
-} else if (Koalas == Dolphin) {
-  if (Koalas >= 100 && Dolphin >= 100) {
-    console.log(`There is a draw between both the team`);
-  } else {
-    console.log(`Teams does not have more than 100 points`);
-  }
-} else {
-  console.log(`No One wins the game`);
-}
+// if (Dolphin > Koalas) {
+//   if (Dolphin >= 100) {
+//     console.log(`Winner is Dolphin`);
+//   } else {
+//     console.log(
+//       `Dolphin has more average score than Koalas but does not exceed 100 points`
+//     );
+//   }
+// } else if (Koalas > Dolphin) {
+//   if (Koalas >= 100) {
+//     console.log(`Winner is Koalas`);
+//   } else {
+//     console.log(
+//       `Koalas has more average score than Dolphin but does not exceed 100 points`
+//     );
+//   }
+// } else if (Koalas == Dolphin) {
+//   if (Koalas >= 100 && Dolphin >= 100) {
+//     console.log(`There is a draw between both the team`);
+//   } else {
+//     console.log(`Teams does not have more than 100 points`);
+//   }
+// } else {
+//   console.log(`No One wins the game`);
+// }
+
+// Fourth Challenge
+let bill, tip;
+bill = 275;
+tip = bill <= 300 && bill > 50 ? bill * 0.15 : bill * 1.2;
+console.log(
+  `The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`
+);

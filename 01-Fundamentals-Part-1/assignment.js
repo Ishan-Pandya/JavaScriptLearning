@@ -66,8 +66,8 @@
 // }
 
 // // //code for logical operators
-// let country = "Canada";
-// let population = 38.01;
+let country = "Canada";
+let population = 38.01;
 // let language = "English";
 // let isIsland = false;
 
@@ -76,3 +76,8 @@
 // } else {
 //   console.log(`${country} does not meet your criteria`);
 // }
+
+// // //code for conditional ternary operators
+console.log(
+  `${country}s population is ${population >= 33 ? "above" : "below"} average`
+);

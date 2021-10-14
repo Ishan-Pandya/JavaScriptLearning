@@ -178,7 +178,7 @@ if (23 > 10) {
   const str = "23 is bigger";
 }
 
-// //code for conditional operator
+// //code for conditional ternary operator
 const age = 23;
 age >= 18
   ? console.log(`I like to drink wine `)

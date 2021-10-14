@@ -36,8 +36,18 @@
 
 //  //  ***********Code for Arrow functions***********
 const percentageOfWorld1 = (population) => population / 79;
-const India2 = percentageOfWorld1(1380);
-const China2 = percentageOfWorld1(1440);
-const UnitedS2 = percentageOfWorld1(329.5);
+// const India2 = percentageOfWorld1(1380);
+// const China2 = percentageOfWorld1(1440);
+// const UnitedS2 = percentageOfWorld1(329.5);
 
-console.log(India2, China2, UnitedS2);
+// console.log(India2, China2, UnitedS2);
+
+//  //  ***********Code for functions calling other functions***********
+function describePopulation(country, population) {
+  const percPopulation = percentageOfWorld1(population);
+  return `${country} has ${population} million people, which is about ${percPopulation} of the world.`;
+}
+
+console.log(describePopulation("India", 1380));
+console.log(describePopulation("China", 1440));
+console.log(describePopulation("United States", 329.5));

@@ -68,47 +68,62 @@
 // console.log(fruitProcessor(2, 4));
 
 // // Code for Arrays
-const friend1 = "Ishan";
-const friend2 = "Ved";
-const friend3 = "Jay";
+// const friend1 = "Ishan";
+// const friend2 = "Ved";
+// const friend3 = "Jay";
+
+// const friends = ["Ishan", "Ved", "Jay"];
+// console.log(friends);
+
+// const years = new Array(1991, 1984, 2008, 2020);
+// console.log(years[0]);
+// console.log(years[1]);
+// console.log(years[2]);
+// console.log(years[3]);
+
+// console.log(friends.length); // to get the length of the array
+// console.log(friends[friends.length - 1]); // for the last data saved in the array
+
+// friends[2] = "Nutan";
+// console.log(friends);
+
+// const firstName = "Ishan";
+// const Ishan = ["Ishan", "Pandya", 2021 - 1996, "Male", friends];
+// console.log(Ishan);
+
+// // // Exercise for array
+// const calcAge = function (birthYear) {
+//   return 2021 - birthYear;
+// };
+// const year = [1990, 1967, 2002, 2020, 2018];
+// console.log(
+//   calcAge(year[0]),
+//   calcAge(year[1]),
+//   calcAge(year[2]),
+//   calcAge(year[3]),
+//   calcAge(year[4])
+// );
+
+// const age = [
+//   calcAge(year[0]),
+//   calcAge(year[1]),
+//   calcAge(year[2]),
+//   calcAge(year[3]),
+//   calcAge(year[4]),
+// ];
+// console.log(age);
 
 const friends = ["Ishan", "Ved", "Jay"];
+friends.push("Nutan"); // push command add the value to the last place in array
 console.log(friends);
 
-const years = new Array(1991, 1984, 2008, 2020);
-console.log(years[0]);
-console.log(years[1]);
-console.log(years[2]);
-console.log(years[3]);
+friends.unshift("Mike");
+console.log(friends); // unshift command add the value at the start of the array
 
-console.log(friends.length); // to get the length of the array
-console.log(friends[friends.length - 1]); // for the last data saved in the array
-
-friends[2] = "Nutan";
+friends.pop(); // pop remove the last element from the array
 console.log(friends);
 
-const firstName = "Ishan";
-const Ishan = ["Ishan", "Pandya", 2021 - 1996, "Male", friends];
-console.log(Ishan);
+friends.shift(); // shift command remove the first element in the array
+console.log(friends);
 
-// // Exercise for array
-const calcAge = function (birthYear) {
-  return 2021 - birthYear;
-};
-const year = [1990, 1967, 2002, 2020, 2018];
-console.log(
-  calcAge(year[0]),
-  calcAge(year[1]),
-  calcAge(year[2]),
-  calcAge(year[3]),
-  calcAge(year[4])
-);
-
-const age = [
-  calcAge(year[0]),
-  calcAge(year[1]),
-  calcAge(year[2]),
-  calcAge(year[3]),
-  calcAge(year[4]),
-];
-console.log(age);
+console.log(friends.indexOf("Jay"));

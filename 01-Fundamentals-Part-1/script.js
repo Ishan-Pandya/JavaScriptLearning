@@ -175,8 +175,7 @@
 // true && false && !false;
 // // statement
 // if (23 > 10) {
-//   const str = "23 is bigger";
-}
+//   const str = "23 is bigger";}
 
 // //code for conditional ternary operator
 // const age = 23;

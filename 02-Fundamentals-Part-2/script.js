@@ -175,35 +175,35 @@
 //   `${ishan.firstName} has ${ishan.love.length} love and his first love is ${ishan.love[0]}`
 // );
 
-const ishan = {
-  firstName: "Ishan",
-  lastName: "Pandya",
-  birthYear: 1996,
-  job: "Programmer",
-  love: ["Parents", "Hemangi", "Cars", "Money"],
-  hasDriversLicense: true,
+// const ishan = {
+//   firstName: "Ishan",
+//   lastName: "Pandya",
+//   birthYear: 1996,
+//   job: "Programmer",
+//   love: ["Parents", "Hemangi", "Cars", "Money"],
+//   hasDriversLicense: true,
 
-  // calcAge: function (birthYear) {
-  //   return 2021 - birthYear;
-  // },
+//   // calcAge: function (birthYear) {
+//   //   return 2021 - birthYear;
+//   // },
 
-  // calcAge: function () {
-  //   return 2021 - this.birthYear;
-  // },
+//   // calcAge: function () {
+//   //   return 2021 - this.birthYear;
+//   // },
 
-  calcAge: function () {
-    this.age = 2021 - this.birthYear;
-    return this.age;
-  },
+//   calcAge: function () {
+//     this.age = 2021 - this.birthYear;
+//     return this.age;
+//   },
 
-  getSummary: function () {
-    return `${this.firstName} is a ${this.calcAge()} -years old, and he has ${
-      this.hasDriversLicense ? `a` : `no`
-    } driver's license.`;
-  },
-};
+//   getSummary: function () {
+//     return `${this.firstName} is a ${this.calcAge()} -years old, and he has ${
+//       this.hasDriversLicense ? `a` : `no`
+//     } driver's license.`;
+//   },
+// };
 
-console.log(ishan.calcAge());
-console.log(ishan.age);
+// console.log(ishan.calcAge());
+// console.log(ishan.age);
 
-console.log(ishan.getSummary());
+// console.log(ishan.getSummary());

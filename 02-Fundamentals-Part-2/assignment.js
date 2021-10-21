@@ -109,21 +109,21 @@
 // console.log(myCountry.population);
 
 // // ***********Object Method***********
-const myCountry = {
-  country: "India",
-  capital: "Delhi",
-  language: "Hindi",
-  population: 1380,
-  neighbours: ["Bhutan", "Nepal", "Maldives", "china"],
+// const myCountry = {
+//   country: "India",
+//   capital: "Delhi",
+//   language: "Hindi",
+//   population: 1380,
+//   neighbours: ["Bhutan", "Nepal", "Maldives", "china"],
 
-  describe: function () {
-    console.log(
-      `${this.country} has ${this.population} billion ${this.language}-speaking people, ${this.neighbours.length} neighbour countries and a capital called ${this.capital}`
-    );
-  },
+//   describe: function () {
+//     console.log(
+//       `${this.country} has ${this.population} billion ${this.language}-speaking people, ${this.neighbours.length} neighbour countries and a capital called ${this.capital}`
+//     );
+//   },
 
-  checkIsland: function () {
-    this.isIsland = this.neighbours.length === 0 ? true : false;
-  },
-};
-myCountry.describe();
+//   checkIsland: function () {
+//     this.isIsland = this.neighbours.length === 0 ? true : false;
+//   },
+// };
+// myCountry.describe();

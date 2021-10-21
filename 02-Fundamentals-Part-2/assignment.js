@@ -133,13 +133,13 @@
 //   console.log(`Voter number ${voter} is currently voting`);
 // }
 
-// // ***********Looping Arrays, Breaking and Continuing***********
-let population = [38.01, 1380, 329.5, 1402];
-let percentages2 = [];
-function percentageOfWorld1(population) {
-  return population / 79;
-}
-for (let i = 0; i < population.length; i++) {
-  percentages2[i] = percentageOfWorld1(population[i]);
-}
-console.log(percentages2);
+// // // ***********Looping Arrays, Breaking and Continuing***********
+// let population = [38.01, 1380, 329.5, 1402];
+// let percentages2 = [];
+// function percentageOfWorld1(population) {
+//   return population / 79;
+// }
+// for (let i = 0; i < population.length; i++) {
+//   percentages2[i] = percentageOfWorld1(population[i]);
+// }
+// console.log(percentages2);

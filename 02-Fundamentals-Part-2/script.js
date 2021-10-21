@@ -213,6 +213,44 @@
 //   console.log(`this is repetition ${rep}`);
 // }
 
+// const ishan = [
+//   "ishan",
+//   "Pandya",
+//   2021 - 1996,
+//   "developer",
+//   ["Car", "Bikes", "Race"],
+// ];
+// const types = [];
+// for (let i = 0; i < ishan.length; i++) {
+//   console.log(ishan[i], typeof ishan[i]);
+
+//   // types[i] = typeof ishan[i];
+//   types.push(typeof ishan[i]);
+// }
+// console.log(types);
+
+// const years = [1991, 2007, 1969, 2020];
+// const age = [];
+
+// for (let i = 0; i < years.length; i++) {
+//   age.push(2021 - years[i]);
+// }
+// console.log(age);
+
+// continue and break statement
+// console.log("*****only string");
+// for (let i = 0; i < ishan.length; i++) {
+//   if (typeof ishan[i] !== "string") continue;
+//   console.log(ishan[i], typeof ishan[i]);
+// }
+
+// console.log("*****break after number");
+// for (let i = 0; i < ishan.length; i++) {
+//   if (typeof ishan[i] == "number") break;
+//   console.log(ishan[i], typeof ishan[i]);
+// }
+
+// // // Exercise related to looping backwards and loops in loops
 const ishan = [
   "ishan",
   "Pandya",
@@ -220,32 +258,13 @@ const ishan = [
   "developer",
   ["Car", "Bikes", "Race"],
 ];
-const types = [];
-for (let i = 0; i < ishan.length; i++) {
-  console.log(ishan[i], typeof ishan[i]);
-
-  // types[i] = typeof ishan[i];
-  types.push(typeof ishan[i]);
-}
-console.log(types);
-
-const years = [1991, 2007, 1969, 2020];
-const age = [];
-
-for (let i = 0; i < years.length; i++) {
-  age.push(2021 - years[i]);
-}
-console.log(age);
-
-// continue and break statement
-console.log("*****only string");
-for (let i = 0; i < ishan.length; i++) {
-  if (typeof ishan[i] !== "string") continue;
-  console.log(ishan[i], typeof ishan[i]);
+for (let i = ishan.length - 1; i >= 0; i--) {
+  console.log(ishan[i]);
 }
 
-console.log("*****break after number");
-for (let i = 0; i < ishan.length; i++) {
-  if (typeof ishan[i] == "number") break;
-  console.log(ishan[i], typeof ishan[i]);
+for (let exercise = 1; exercise <= 3; exercise++) {
+  console.log(`---------Starting exercise ${exercise}---------`);
+  for (let rep = 1; rep <= 5; rep++) {
+    console.log(`------This is repetition number ${rep}------`);
+  }
 }

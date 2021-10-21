@@ -128,7 +128,18 @@
 // };
 // myCountry.describe();
 
-// // ***********Object Method***********
-for (let voter = 1; voter <= 50; voter++) {
-  console.log(`Voter number ${voter} is currently voting`);
+// // ***********The for Loop***********
+// for (let voter = 1; voter <= 50; voter++) {
+//   console.log(`Voter number ${voter} is currently voting`);
+// }
+
+// // ***********Looping Arrays, Breaking and Continuing***********
+let population = [38.01, 1380, 329.5, 1402];
+let percentages2 = [];
+function percentageOfWorld1(population) {
+  return population / 79;
 }
+for (let i = 0; i < population.length; i++) {
+  percentages2[i] = percentageOfWorld1(population[i]);
+}
+console.log(percentages2);

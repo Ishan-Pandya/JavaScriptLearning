@@ -113,23 +113,64 @@
 // ];
 // console.log(age);
 
-const friends = ["Ishan", "Ved", "Jay"];
-friends.push("Nutan"); // push command add the value to the last place in array
-console.log(friends);
+// const friends = ["Ishan", "Ved", "Jay"];
+// friends.push("Nutan"); // push command add the value to the last place in array
+// console.log(friends);
 
-friends.unshift("Mike");
-console.log(friends); // unshift command add the value at the start of the array
+// friends.unshift("Mike");
+// console.log(friends); // unshift command add the value at the start of the array
 
-friends.pop(); // pop remove the last element from the array
-console.log(friends);
+// friends.pop(); // pop remove the last element from the array
+// console.log(friends);
 
-friends.shift(); // shift command remove the first element in the array
-console.log(friends);
+// friends.shift(); // shift command remove the first element in the array
+// console.log(friends);
 
-console.log(friends.indexOf("Jay"));
-console.log(friends.includes("Ishan"));
-console.log(friends.includes("Hello"));
+// console.log(friends.indexOf("Jay"));
+// console.log(friends.includes("Ishan"));
+// console.log(friends.includes("Hello"));
 
-if (friends.includes("Ishan")) {
-  console.log("Ishan is your friend");
-}
+// if (friends.includes("Ishan")) {
+//   console.log("Ishan is your friend");
+// }
+
+// // // Exercise for objects
+const ishan = {
+  firstName: "Ishan",
+  lastName: "Pandya",
+  age: 2021 - 1996,
+  job: "Programmer",
+  love: ["Parents", "Hemangi", "Cars", "Money"],
+};
+
+// Here ishan is an object and it has key value pair
+// keys are also called as property
+
+console.log(ishan);
+console.log(ishan.lastName);
+console.log(ishan["lastName"]);
+console.log(ishan.love[2]);
+
+const nameKey = "Name";
+console.log(ishan["first" + nameKey]);
+console.log(ishan["last" + nameKey]);
+
+// const interestedIn = prompt(
+//   "What do you wnt to know about ishan? choose between firstName, lastName, age, job and love"
+// );
+
+// if (ishan[interestedIn]) {
+//   console.log(ishan[interestedIn]);
+// } else {
+//   console.log("please choose the correct property");
+// }
+
+ishan.location = "Canada";
+console.log(ishan);
+
+// in class challenge
+// ishan have 4 love and his first love is parents
+
+console.log(
+  `${ishan.firstName} has ${ishan.love.length} love and his first love is ${ishan.love[0]}`
+);

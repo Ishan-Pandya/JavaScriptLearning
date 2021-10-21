@@ -53,21 +53,21 @@
 // console.log(describePopulation("United States", 329.5));
 
 // // ***********Code for array***********
-function percentageOfWorld1(population) {
-  return population / 79;
-}
+// function percentageOfWorld1(population) {
+//   return population / 79;
+// }
 
-// Population of Canada, India, USA, China
-// [38.01, 1380, 329.5, 1402]
-let population, percentages;
-population = [38.01, 1380, 329.5, 1402];
-console.log(population.length === 4);
+// // Population of Canada, India, USA, China
+// // [38.01, 1380, 329.5, 1402]
+// let population, percentages;
+// population = [38.01, 1380, 329.5, 1402];
+// console.log(population.length === 4);
 
-percentages = [
-  percentageOfWorld1(population[0]),
-  percentageOfWorld1(population[1]),
-  percentageOfWorld1(population[2]),
-  percentageOfWorld1(population[3]),
-];
+// percentages = [
+//   percentageOfWorld1(population[0]),
+//   percentageOfWorld1(population[1]),
+//   percentageOfWorld1(population[2]),
+//   percentageOfWorld1(population[3]),
+// ];
 
-console.log(percentages);
+// console.log(percentages);

@@ -208,4 +208,7 @@
 
 // console.log(ishan.getSummary());
 
-// // // Exercise for For Loop
+// // // Exercise related to For Loop
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`this is repetition ${rep}`);
+}

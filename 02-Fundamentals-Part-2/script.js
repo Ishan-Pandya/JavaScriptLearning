@@ -127,3 +127,9 @@ friends.shift(); // shift command remove the first element in the array
 console.log(friends);
 
 console.log(friends.indexOf("Jay"));
+console.log(friends.includes("Ishan"));
+console.log(friends.includes("Hello"));
+
+if (friends.includes("Ishan")) {
+  console.log("Ishan is your friend");
+}

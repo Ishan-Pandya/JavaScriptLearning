@@ -207,3 +207,5 @@
 // console.log(ishan.age);
 
 // console.log(ishan.getSummary());
+
+// // // Exercise for For Loop

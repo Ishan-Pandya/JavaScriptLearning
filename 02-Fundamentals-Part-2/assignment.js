@@ -73,16 +73,27 @@
 // console.log(percentages);
 
 // // ***********Basic Array Operations***********
-const neighbours = ["Bhutan", "Nepal", "Maldives", "china"];
-console.log(neighbours);
-neighbours.push("Utopia");
-console.log(neighbours);
-neighbours.pop();
-console.log(neighbours);
+// const neighbours = ["Bhutan", "Nepal", "Maldives", "china"];
+// console.log(neighbours);
+// neighbours.push("Utopia");
+// console.log(neighbours);
+// neighbours.pop();
+// console.log(neighbours);
 
-if (!neighbours.includes("Germany")) {
-  console.log("Probably not a central European country :D");
-}
+// if (!neighbours.includes("Germany")) {
+//   console.log("Probably not a central European country :D");
+// }
 
-neighbours[neighbours.indexOf("Maldives")] = "Pretty Maldives";
-console.log(neighbours);
+// neighbours[neighbours.indexOf("Maldives")] = "Pretty Maldives";
+// console.log(neighbours);
+
+// // ***********Introduction of Objects***********
+const myCountry = {
+  country: "India",
+  capital: "Delhi",
+  language: "Hindi",
+  population: "1.38 billion",
+  neighbours: ["Bhutan", "Nepal", "Maldives", "china"],
+};
+
+console.log(myCountry);

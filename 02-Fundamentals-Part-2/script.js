@@ -135,25 +135,25 @@
 // }
 
 // // // Exercise for objects
-const ishan = {
-  firstName: "Ishan",
-  lastName: "Pandya",
-  age: 2021 - 1996,
-  job: "Programmer",
-  love: ["Parents", "Hemangi", "Cars", "Money"],
-};
+// const ishan = {
+//   firstName: "Ishan",
+//   lastName: "Pandya",
+//   age: 2021 - 1996,
+//   job: "Programmer",
+//   love: ["Parents", "Hemangi", "Cars", "Money"],
+// };
 
 // Here ishan is an object and it has key value pair
 // keys are also called as property
 
-console.log(ishan);
-console.log(ishan.lastName);
-console.log(ishan["lastName"]);
-console.log(ishan.love[2]);
+// console.log(ishan);
+// console.log(ishan.lastName);
+// console.log(ishan["lastName"]);
+// console.log(ishan.love[2]);
 
-const nameKey = "Name";
-console.log(ishan["first" + nameKey]);
-console.log(ishan["last" + nameKey]);
+// const nameKey = "Name";
+// console.log(ishan["first" + nameKey]);
+// console.log(ishan["last" + nameKey]);
 
 // const interestedIn = prompt(
 //   "What do you wnt to know about ishan? choose between firstName, lastName, age, job and love"
@@ -165,12 +165,45 @@ console.log(ishan["last" + nameKey]);
 //   console.log("please choose the correct property");
 // }
 
-ishan.location = "Canada";
-console.log(ishan);
+// ishan.location = "Canada";
+// console.log(ishan);
 
 // in class challenge
 // ishan have 4 love and his first love is parents
 
-console.log(
-  `${ishan.firstName} has ${ishan.love.length} love and his first love is ${ishan.love[0]}`
-);
+// console.log(
+//   `${ishan.firstName} has ${ishan.love.length} love and his first love is ${ishan.love[0]}`
+// );
+
+const ishan = {
+  firstName: "Ishan",
+  lastName: "Pandya",
+  birthYear: 1996,
+  job: "Programmer",
+  love: ["Parents", "Hemangi", "Cars", "Money"],
+  hasDriversLicense: true,
+
+  // calcAge: function (birthYear) {
+  //   return 2021 - birthYear;
+  // },
+
+  // calcAge: function () {
+  //   return 2021 - this.birthYear;
+  // },
+
+  calcAge: function () {
+    this.age = 2021 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()} -years old, and he has ${
+      this.hasDriversLicense ? `a` : `no`
+    } driver's license.`;
+  },
+};
+
+console.log(ishan.calcAge());
+console.log(ishan.age);
+
+console.log(ishan.getSummary());

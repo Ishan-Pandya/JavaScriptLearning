@@ -251,20 +251,37 @@
 // }
 
 // // // Exercise related to looping backwards and loops in loops
-const ishan = [
-  "ishan",
-  "Pandya",
-  2021 - 1996,
-  "developer",
-  ["Car", "Bikes", "Race"],
-];
-for (let i = ishan.length - 1; i >= 0; i--) {
-  console.log(ishan[i]);
-}
+// const ishan = [
+//   "ishan",
+//   "Pandya",
+//   2021 - 1996,
+//   "developer",
+//   ["Car", "Bikes", "Race"],
+// ];
+// for (let i = ishan.length - 1; i >= 0; i--) {
+//   console.log(ishan[i]);
+// }
 
-for (let exercise = 1; exercise <= 3; exercise++) {
-  console.log(`---------Starting exercise ${exercise}---------`);
-  for (let rep = 1; rep <= 5; rep++) {
-    console.log(`------This is repetition number ${rep}------`);
+// for (let exercise = 1; exercise <= 3; exercise++) {
+//   console.log(`---------Starting exercise ${exercise}---------`);
+//   for (let rep = 1; rep <= 5; rep++) {
+//     console.log(`------This is repetition number ${rep}------`);
+//   }
+// }
+
+// // // Exercise for While loop
+
+let rep = 1;
+while (rep <= 10) {
+  console.log(`This is repetition number ${rep}`);
+  rep++;
+}
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`you rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice == 6) {
+    console.log("Loop is about to end");
   }
 }

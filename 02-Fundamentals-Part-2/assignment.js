@@ -145,14 +145,14 @@
 // console.log(percentages2);
 
 // // // ***********Looping Backwards and Loops in Loops***********
-const listOfNeighbours = [
-  ["Canada", "Mexico"],
-  ["Spain"],
-  ["Norway", "Sweden", "Russia"],
-];
+// const listOfNeighbours = [
+//   ["Canada", "Mexico"],
+//   ["Spain"],
+//   ["Norway", "Sweden", "Russia"],
+// ];
 
-for (let i = 0; i < listOfNeighbours.length; i++) {
-  for (let j = 0; j < listOfNeighbours[i].length; j++) {
-    console.log(listOfNeighbours[i][j]);
-  }
-}
+// for (let i = 0; i < listOfNeighbours.length; i++) {
+//   for (let j = 0; j < listOfNeighbours[i].length; j++) {
+//     console.log(listOfNeighbours[i][j]);
+//   }
+// }

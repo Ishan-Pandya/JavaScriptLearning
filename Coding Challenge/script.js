@@ -146,3 +146,18 @@
 // else (john.BMI > mark.BMI){
 //   console.log(`${john.firstName} BMI (${john.BMI}) is higher than ${mark.firstName} (${mark.BMI})`)
 // }
+
+// // Fourth Challenge
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+for (let i = 0; i < bills.length; i++) {
+  tips.push(
+    bills[i] >= 50 && bills[i] <= 300 ? bills[i] * 0.15 : bills[i] * 0.2
+  );
+  totals.push(tips[i] + bills[i]);
+}
+console.log(bills);
+console.log(tips);
+console.log(totals);

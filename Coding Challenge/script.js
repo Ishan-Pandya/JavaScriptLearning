@@ -148,29 +148,73 @@
 // }
 
 // // Fourth Challenge
-const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
-const tips = [];
-const totals = [];
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const tips = [];
+// const totals = [];
 
-for (let i = 0; i < bills.length; i++) {
-  tips.push(
-    bills[i] >= 50 && bills[i] <= 300 ? bills[i] * 0.15 : bills[i] * 0.2
-  );
-  totals.push(tips[i] + bills[i]);
-}
-console.log(bills);
-console.log(tips);
-console.log(totals);
+// for (let i = 0; i < bills.length; i++) {
+//   tips.push(
+//     bills[i] >= 50 && bills[i] <= 300 ? bills[i] * 0.15 : bills[i] * 0.2
+//   );
+//   totals.push(tips[i] + bills[i]);
+// }
+// console.log(bills);
+// console.log(tips);
+// console.log(totals);
 
-const calcAverage = function (arr) {
-  let sum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    // sum = sum + arr[i];
-    sum += arr[i];
+// const calcAverage = function (arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     // sum = sum + arr[i];
+//     sum += arr[i];
+//   }
+//   return sum / arr.length;
+// };
+
+// console.log(calcAverage(totals));
+// console.log(calcAverage(tips));
+// console.log(calcAverage(bills));
+
+// // // in class challenge
+// function receive an array of temp and find amplitude by ignoring the errors.
+const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
+const calcTempAmp = function (temps) {
+  let max = temps[0];
+  let min = temps[0];
+
+  for (let i = 0; i < temps.length; i++) {
+    const curTemp = temps[i];
+    if (typeof curTemp !== "number") continue;
+
+    if (curTemp > max) max = curTemp;
+    if (curTemp < min) min = curTemp;
   }
-  return sum / arr.length;
-};
+  console.log(max, min);
 
-console.log(calcAverage(totals));
-console.log(calcAverage(tips));
-console.log(calcAverage(bills));
+  return max - min;
+};
+const amplitude = calcTempAmp(temperatures);
+console.log(amplitude);
+
+// function will receive two arrays
+
+const calcTempAmpNew = function (t1, t2) {
+  const temps = t1.concat(t2);
+  console.log(temps);
+
+  let max = temps[0];
+  let min = temps[0];
+
+  for (let i = 0; i < temps.length; i++) {
+    const curTemp = temps[i];
+    if (typeof curTemp !== "number") continue;
+
+    if (curTemp > max) max = curTemp;
+    if (curTemp < min) min = curTemp;
+  }
+  console.log(max, min);
+
+  return max - min;
+};
+const amplitudeNew = calcTempAmpNew([3, 5, 1], [(9, 0, 5)]);
+console.log(amplitudeNew);

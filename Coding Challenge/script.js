@@ -177,44 +177,85 @@
 
 // // // in class challenge
 // function receive an array of temp and find amplitude by ignoring the errors.
-const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
-const calcTempAmp = function (temps) {
-  let max = temps[0];
-  let min = temps[0];
+// const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
+// const calcTempAmp = function (temps) {
+//   let max = temps[0];
+//   let min = temps[0];
 
-  for (let i = 0; i < temps.length; i++) {
-    const curTemp = temps[i];
-    if (typeof curTemp !== "number") continue;
+//   for (let i = 0; i < temps.length; i++) {
+//     const curTemp = temps[i];
+//     if (typeof curTemp !== "number") continue;
 
-    if (curTemp > max) max = curTemp;
-    if (curTemp < min) min = curTemp;
+//     if (curTemp > max) max = curTemp;
+//     if (curTemp < min) min = curTemp;
+//   }
+//   console.log(max, min);
+
+//   return max - min;
+// };
+// const amplitude = calcTempAmp(temperatures);
+// console.log(amplitude);
+
+// // function will receive two arrays
+
+// const calcTempAmpNew = function (t1, t2) {
+//   const temps = t1.concat(t2);
+//   console.log(temps);
+
+//   let max = temps[0];
+//   let min = temps[0];
+
+//   for (let i = 0; i < temps.length; i++) {
+//     const curTemp = temps[i];
+//     if (typeof curTemp !== "number") continue;
+
+//     if (curTemp > max) max = curTemp;
+//     if (curTemp < min) min = curTemp;
+//   }
+//   console.log(max, min);
+
+//   return max - min;
+// };
+// const amplitudeNew = calcTempAmpNew([3, 5, 1], [(9, 0, 5)]);
+// console.log(amplitudeNew);
+
+// // trying to solve problem with debugging
+// const measureKelvin = function () {
+//   const measurement = {
+//     type: "temp",
+//     unit: "celsius",
+//     value: prompt("Degree celsius:"),
+//   };
+
+//   const kelvin = Number(measurement.value) + 273;
+//   return kelvin;
+// };
+
+// console.log(measureKelvin());
+
+// // // Coding challenge 1
+// understand the problem
+// array transformed to string, separated by ...
+
+//what is the X days?
+// index + 1
+
+//transform the array into string
+// transform each element to string with degree celsius
+// string will have day which is index + 1
+// add ... between element and start and end of the string
+
+const data1 = [17, 21, 23];
+const data2 = [12, 5, -5, 0, 4];
+
+const printForecast = function (arr) {
+  let str = "";
+
+  for (let i = 0; i < arr.length; i++) {
+    str = str + `${arr[i]}temp in ` + `${i + 1} days ...`;
   }
-  console.log(max, min);
 
-  return max - min;
+  console.log(`...` + str);
 };
-const amplitude = calcTempAmp(temperatures);
-console.log(amplitude);
 
-// function will receive two arrays
-
-const calcTempAmpNew = function (t1, t2) {
-  const temps = t1.concat(t2);
-  console.log(temps);
-
-  let max = temps[0];
-  let min = temps[0];
-
-  for (let i = 0; i < temps.length; i++) {
-    const curTemp = temps[i];
-    if (typeof curTemp !== "number") continue;
-
-    if (curTemp > max) max = curTemp;
-    if (curTemp < min) min = curTemp;
-  }
-  console.log(max, min);
-
-  return max - min;
-};
-const amplitudeNew = calcTempAmpNew([3, 5, 1], [(9, 0, 5)]);
-console.log(amplitudeNew);
+printForecast(data1);

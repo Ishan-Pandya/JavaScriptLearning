@@ -107,3 +107,19 @@ const ishan = {
 
 ishan.greet();
 ishan.calcAge();
+
+// Argument keywords
+const addExpr = function (a, b) {
+  console.log(arguments);
+  return a + b;
+};
+addExpr(2, 5);
+console.log(addExpr(2, 3, 4, 5, 6));
+
+// argument keyword does not work with the arrow function
+var addArrow = (a, b) => {
+  console.log(arguments);
+  return a + b;
+};
+
+addArrow(1, 2, 3);

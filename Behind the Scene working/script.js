@@ -53,24 +53,57 @@
 
 // calcAgeArrow(1996);
 
+// const ishan = {
+//   year: 1996,
+//   calcAge: function () {
+//     console.log(this);
+//     console.log(2021 - this.year);
+//   },
+// };
+
+// ishan.calcAge();
+
+// const matilda = {
+//   year: 2017,
+// };
+
+// matilda.calcAge = ishan.calcAge;
+
+// matilda.calcAge();
+// console.log(matilda);
+
+// const f = ishan.calcAge;
+// f();
+
+var firstName = "Pandya";
+
 const ishan = {
+  firstName: "Ishan",
   year: 1996,
   calcAge: function () {
-    console.log(this);
     console.log(2021 - this.year);
+
+    // solution - 1
+    //   const self = this;
+    //   const isMillenial = function () {
+    //     console.log(self.year >= 1981 && self.year <= 1996);
+    //   };
+    //   isMillenial();
+    // },
+
+    // solution - 2
+    // const self = this;
+    const isMillenial = () => {
+      console.log(this.year >= 1981 && this.year <= 1996);
+    };
+    isMillenial();
+  },
+
+  greet: () => {
+    console.log(this);
+    console.log(`Hey ${this.firstName}`);
   },
 };
 
+ishan.greet();
 ishan.calcAge();
-
-const matilda = {
-  year: 2017,
-};
-
-matilda.calcAge = ishan.calcAge;
-
-matilda.calcAge();
-console.log(matilda);
-
-const f = ishan.calcAge;
-f();

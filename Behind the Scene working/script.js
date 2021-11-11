@@ -39,25 +39,38 @@
 
 // console.log(this);
 
-const calcAge = function (birthyear) {
-  console.log(2021 - birthyear);
-  console.log(this);
-};
+// const calcAge = function (birthyear) {
+//   console.log(2021 - birthyear);
+//   console.log(this);
+// };
 
-calcAge(1996);
+// calcAge(1996);
 
-const calcAgeArrow = (birthyear) => {
-  console.log(2021 - birthyear);
-  console.log(this);
-};
+// const calcAgeArrow = (birthyear) => {
+//   console.log(2021 - birthyear);
+//   console.log(this);
+// };
 
-calcAgeArrow(1996);
+// calcAgeArrow(1996);
 
-const Ishan = {
+const ishan = {
   year: 1996,
   calcAge: function () {
     console.log(this);
+    console.log(2021 - this.year);
   },
 };
 
-Ishan.calcAge();
+ishan.calcAge();
+
+const matilda = {
+  year: 2017,
+};
+
+matilda.calcAge = ishan.calcAge;
+
+matilda.calcAge();
+console.log(matilda);
+
+const f = ishan.calcAge;
+f();

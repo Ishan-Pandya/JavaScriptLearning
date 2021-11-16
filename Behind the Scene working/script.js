@@ -75,51 +75,67 @@
 // const f = ishan.calcAge;
 // f();
 
-var firstName = "Pandya";
+// var firstName = "Pandya";
 
-const ishan = {
-  firstName: "Ishan",
-  year: 1996,
-  calcAge: function () {
-    console.log(2021 - this.year);
+// const ishan = {
+//   firstName: "Ishan",
+//   year: 1996,
+//   calcAge: function () {
+//     console.log(2021 - this.year);
 
-    // solution - 1
-    //   const self = this;
-    //   const isMillenial = function () {
-    //     console.log(self.year >= 1981 && self.year <= 1996);
-    //   };
-    //   isMillenial();
-    // },
+// solution - 1
+//   const self = this;
+//   const isMillenial = function () {
+//     console.log(self.year >= 1981 && self.year <= 1996);
+//   };
+//   isMillenial();
+// },
 
-    // solution - 2
-    // const self = this;
-    const isMillenial = () => {
-      console.log(this.year >= 1981 && this.year <= 1996);
-    };
-    isMillenial();
-  },
+//     // solution - 2
+//     // const self = this;
+//     const isMillenial = () => {
+//       console.log(this.year >= 1981 && this.year <= 1996);
+//     };
+//     isMillenial();
+//   },
 
-  greet: () => {
-    console.log(this);
-    console.log(`Hey ${this.firstName}`);
-  },
+//   greet: () => {
+//     console.log(this);
+//     console.log(`Hey ${this.firstName}`);
+//   },
+// };
+
+// ishan.greet();
+// ishan.calcAge();
+
+// // Argument keywords
+// const addExpr = function (a, b) {
+//   console.log(arguments);
+//   return a + b;
+// };
+// addExpr(2, 5);
+// console.log(addExpr(2, 3, 4, 5, 6));
+
+// // argument keyword does not work with the arrow function
+// var addArrow = (a, b) => {
+//   console.log(arguments);
+//   return a + b;
+// };
+
+// addArrow(1, 2, 3);
+
+let age = 30;
+let oldAge = age;
+age = 31;
+console.log(age);
+console.log(oldAge);
+
+const me = {
+  name: "Ishan",
+  age: 30,
 };
+const friend = me;
+friend.age = 27;
 
-ishan.greet();
-ishan.calcAge();
-
-// Argument keywords
-const addExpr = function (a, b) {
-  console.log(arguments);
-  return a + b;
-};
-addExpr(2, 5);
-console.log(addExpr(2, 3, 4, 5, 6));
-
-// argument keyword does not work with the arrow function
-var addArrow = (a, b) => {
-  console.log(arguments);
-  return a + b;
-};
-
-addArrow(1, 2, 3);
+console.log(friend);
+console.log(me);

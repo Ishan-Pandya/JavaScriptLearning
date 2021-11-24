@@ -124,18 +124,51 @@
 
 // addArrow(1, 2, 3);
 
-let age = 30;
-let oldAge = age;
-age = 31;
-console.log(age);
-console.log(oldAge);
+// let age = 30;
+// let oldAge = age;
+// age = 31;
+// console.log(age);
+// console.log(oldAge);
 
-const me = {
-  name: "Ishan",
-  age: 30,
+// const me = {
+//   name: "Ishan",
+//   age: 30,
+// };
+// const friend = me;
+// friend.age = 27;
+
+// console.log(friend);
+// console.log(me);
+
+// primitive types
+let lastName = "Pandya";
+let oldLastName = lastName;
+lastName = "Davis";
+console.log(lastName, oldLastName);
+
+// reference types
+const ishan = {
+  firstName: "Ishan",
+  lastName: "Pandya",
+  age: 24,
 };
-const friend = me;
-friend.age = 27;
+const marriedIshan = ishan;
+marriedIshan.lastName = "Kumar Pandya";
 
-console.log(friend);
-console.log(me);
+// console.log(ishan, marriedIshan);
+
+// Copying objects
+const ishan2 = {
+  firstName: "Ishan",
+  lastName: "Pandya",
+  age: 24,
+  family: ["Ishan", "Ved"],
+};
+
+// with the help of object.assign we can create a shallow copy.
+const ishanCopy = Object.assign({}, ishan2);
+ishanCopy.lastName = "Davis";
+ishanCopy.family.push("Nutan");
+ishanCopy.family.push("Jay");
+
+console.log(ishan2, ishanCopy);

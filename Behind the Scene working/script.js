@@ -140,35 +140,79 @@
 // console.log(friend);
 // console.log(me);
 
-// primitive types
-let lastName = "Pandya";
-let oldLastName = lastName;
-lastName = "Davis";
-console.log(lastName, oldLastName);
+// // primitive types
+// let lastName = "Pandya";
+// let oldLastName = lastName;
+// lastName = "Davis";
+// console.log(lastName, oldLastName);
 
-// reference types
-const ishan = {
-  firstName: "Ishan",
-  lastName: "Pandya",
-  age: 24,
-};
-const marriedIshan = ishan;
-marriedIshan.lastName = "Kumar Pandya";
+// // reference types
+// const ishan = {
+//   firstName: "Ishan",
+//   lastName: "Pandya",
+//   age: 24,
+// };
+// const marriedIshan = ishan;
+// marriedIshan.lastName = "Kumar Pandya";
 
 // console.log(ishan, marriedIshan);
 
 // Copying objects
-const ishan2 = {
-  firstName: "Ishan",
-  lastName: "Pandya",
-  age: 24,
-  family: ["Ishan", "Ved"],
-};
+// const ishan2 = {
+//   firstName: "Ishan",
+//   lastName: "Pandya",
+//   age: 24,
+//   family: ["Ishan", "Ved"],
+// };
 
 // with the help of object.assign we can create a shallow copy.
-const ishanCopy = Object.assign({}, ishan2);
-ishanCopy.lastName = "Davis";
-ishanCopy.family.push("Nutan");
-ishanCopy.family.push("Jay");
+// const ishanCopy = Object.assign({}, ishan2);
+// ishanCopy.lastName = "Davis";
+// ishanCopy.family.push("Nutan");
+// ishanCopy.family.push("Jay");
 
-console.log(ishan2, ishanCopy);
+// console.log(ishan2, ishanCopy);
+
+const restaurant = {
+  name: "Classico Italiano",
+  location: "via Angelo Tavanti 23, Firenze, Italy",
+  categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
+  starterMenu: ["Focaccia", "Brushetta", "Garlic Bread", "Caprese Salad"],
+  mainMenu: ["Pizza", "Pasta", "Risotto"],
+
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
+};
+
+const arr = [2, 3, 4];
+const a = arr[0];
+const b = arr[1];
+const c = arr[2];
+
+const [x, y, z] = arr;
+console.log(x, y, z);
+
+let [main, , secondary] = restaurant.categories;
+console.log(main, secondary);
+
+// receive 2 return values from a function
+const [starter, mainCourse] = restaurant.order(2, 0);
+console.log(starter, mainCourse);
+
+//nested destructuring
+const nested = [2, 4, [5, 6]];
+// const [i, , j] = nested;
+// console.log(i, j);
+const [i, , [j, k]] = nested;
+console.log(i, j, k);
+
+//default values
+const [p = 1, q = 1, r = 1] = [8, 9];
+console.log(p, q, r);
+
+// switching variables
+const temp = main;
+main = secondary;
+secondary = temp;
+console.log(main, secondary);

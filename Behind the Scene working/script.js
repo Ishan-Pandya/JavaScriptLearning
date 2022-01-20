@@ -208,7 +208,58 @@ const restaurant = {
       `order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
     );
   },
+
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(`Here is your Pasta with ${ing1}, ${ing2}, and ${ing3}`);
+  },
 };
+
+const arr = [7, 8, 9];
+const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
+console.log(badNewArr);
+
+const newArr = [1, 2, ...arr];
+console.log(newArr);
+
+console.log(...newArr);
+console.log(1, 2, 7, 8, 9);
+
+const newMenu = [...restaurant.mainMenu, "Gnocci"];
+console.log(newMenu);
+
+//copy array
+const mainMenuCopy = [...restaurant.mainMenu];
+
+//join 2 arrays
+const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+console.log(menu);
+
+//Iterables are arrays, strings, maps, sets but not objects.
+
+const str = "Ishan";
+const letter = [...str, " ", "P."];
+console.log(letter);
+console.log(...str);
+
+// real=world example
+const ingredients = [
+  //   prompt("Let's make pasta! Ingredient 1?"),
+  //   prompt("Let's make pasta! Ingredient 2?"),
+  //   prompt("Let's make pasta! Ingredient 3?"),
+];
+console.log(ingredients);
+restaurant.orderPasta(ingredients[0], ingredients[1], ingredients[2]);
+
+restaurant.orderPasta(...ingredients);
+
+//object
+const newRestaurant = { foundedIn: 1998, ...restaurant, founder: "Guiseppe" };
+console.log(newRestaurant);
+
+const restaurantCopy = { restaurant };
+restaurantCopy.name = " Ristorante Roma";
+console.log(restaurantCopy);
+/*// destructuring objects
 restaurant.orderDelivery({
   time: "22:30",
   address: "via del sole, 21",
@@ -216,7 +267,7 @@ restaurant.orderDelivery({
   starterIndex: 2,
 });
 
-// destructuring objects
+
 const { name, openingHours, categories, starterMenu } = restaurant;
 console.log(name, openingHours, categories, starterMenu);
 
@@ -243,7 +294,7 @@ console.log(a, b);
 const {
   fri: { open: o, close: c },
 } = openingHours;
-console.log(open, close);
+console.log(open, close);*/
 
 /* destructuring arrays
 const arr = [2, 3, 4];

@@ -266,18 +266,18 @@ const arr = [1, 2, ...[3, 4]];
 
 // Rest, as it is on left side of =
 const [a, b, ...others] = [1, 2, 3, 4, 5];
-console.log(a, b, others);
+// console.log(a, b, others);
 
 const [pizza, , risotto, ...otherFood] = [
   ...restaurant.mainMenu,
   ...restaurant.starterMenu,
 ];
 
-console.log(pizza, risotto, otherFood);
+// console.log(pizza, risotto, otherFood);
 
 //objects
 const { sat, ...weekDays } = restaurant.openingHours;
-console.log(weekDays);
+// console.log(weekDays);
 
 // 2) Functions
 const add = function (...numbers) {
@@ -287,12 +287,36 @@ const add = function (...numbers) {
   }
   console.log(sum);
 };
-add(2, 3);
-add(5, 3, 7, 2);
-add(8, 2, 5, 3, 2, 1, 4);
+// add(2, 3);
+// add(5, 3, 7, 2);
+// add(8, 2, 5, 3, 2, 1, 4);
 
 const x = [23, 5, 7];
-add(...x);
+// add(...x);
+
+// Use any data type, return any data type, short-circuiting
+
+console.log("---------OR---------");
+console.log(3 || "Jonas");
+console.log("" || "Jonas");
+console.log(true || 0);
+console.log(undefined || null);
+console.log(undefined || 0 || "" || "Hello" || 23 || null);
+
+restaurant.numGuests = 23;
+const guests = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guests);
+
+const guests2 = restaurant.numGuests || 10;
+console.log(guests2);
+
+console.log("---------AND---------");
+console.log(0 && "Jonas");
+console.log(7 && "Jonas");
+console.log("Jonas" && 23 && null && "Hello");
+
+restaurant.orderPasta && restaurant.orderPasta("one", "two", "three");
+
 /*// destructuring objects
 restaurant.orderDelivery({
   time: "22:30",

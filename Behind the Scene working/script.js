@@ -212,7 +212,20 @@ const restaurant = {
   orderPasta: function (ing1, ing2, ing3) {
     console.log(`Here is your Pasta with ${ing1}, ${ing2}, and ${ing3}`);
   },
+
+  orderPizza: function (mainIngredient, ...otherIngredients) {
+    console.log(mainIngredient);
+    console.log(otherIngredient);
+  },
 };
+
+restaurant.numGuests = 0;
+const guests = restaurant.numGuests || 10;
+console.log(guests);
+
+// Nullish: null and undefined (not 0 or '')
+const guestCorrect = restaurant.numGuests ?? 10;
+console.log(guestCorrect);
 
 // const arr = [7, 8, 9];
 // const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
@@ -224,99 +237,100 @@ const restaurant = {
 // console.log(...newArr);
 // console.log(1, 2, 7, 8, 9);
 
-const newMenu = [...restaurant.mainMenu, "Gnocci"];
+// const newMenu = [...restaurant.mainMenu, "Gnocci"];
 // console.log(newMenu);
 
 //copy array
-const mainMenuCopy = [...restaurant.mainMenu];
+// const mainMenuCopy = [...restaurant.mainMenu];
 
 //join 2 arrays
-const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+// const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
 // console.log(menu);
 
 //Iterables are arrays, strings, maps, sets but not objects.
 
-const str = "Ishan";
-const letter = [...str, " ", "P."];
+// const str = "Ishan";
+// const letter = [...str, " ", "P."];
 // console.log(letter);
 // console.log(...str);
 
 // real=world example
-const ingredients = [
-  //   prompt("Let's make pasta! Ingredient 1?"),
-  //   prompt("Let's make pasta! Ingredient 2?"),
-  //   prompt("Let's make pasta! Ingredient 3?"),
-];
-console.log(ingredients);
+// const ingredients = [
+//   prompt("Let's make pasta! Ingredient 1?"),
+//   prompt("Let's make pasta! Ingredient 2?"),
+//   prompt("Let's make pasta! Ingredient 3?"),
+// ];
+// console.log(ingredients);
 // restaurant.orderPasta(ingredients[0], ingredients[1], ingredients[2]);
 
 // restaurant.orderPasta(...ingredients);
 
 //object
-const newRestaurant = { foundedIn: 1998, ...restaurant, founder: "Guiseppe" };
+// const newRestaurant = { foundedIn: 1998, ...restaurant, founder: "Guiseppe" };
 // console.log(newRestaurant);
 
-const restaurantCopy = { restaurant };
-restaurantCopy.name = " Ristorante Roma";
+// const restaurantCopy = { restaurant };
+// restaurantCopy.name = " Ristorante Roma";
 // console.log(restaurantCopy);
 
 // 1) destructuring
 // Spread, as it is on right side of =
-const arr = [1, 2, ...[3, 4]];
+// const arr = [1, 2, ...[3, 4]];
 
 // Rest, as it is on left side of =
-const [a, b, ...others] = [1, 2, 3, 4, 5];
+// const [a, b, ...others] = [1, 2, 3, 4, 5];
 // console.log(a, b, others);
 
-const [pizza, , risotto, ...otherFood] = [
-  ...restaurant.mainMenu,
-  ...restaurant.starterMenu,
-];
+// const [pizza, , risotto, ...otherFood] = [
+//   ...restaurant.mainMenu,
+//   ...restaurant.starterMenu,
+// ];
 
 // console.log(pizza, risotto, otherFood);
 
 //objects
-const { sat, ...weekDays } = restaurant.openingHours;
+// const { sat, ...weekDays } = restaurant.openingHours;
 // console.log(weekDays);
 
 // 2) Functions
-const add = function (...numbers) {
-  let sum = 0;
-  for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
-  }
-  console.log(sum);
-};
+// const add = function (...numbers) {
+//   let sum = 0;
+//   for (let i = 0; i < numbers.length; i++) {
+//     sum += numbers[i];
+//   }
+//   console.log(sum);
+// };
 // add(2, 3);
 // add(5, 3, 7, 2);
 // add(8, 2, 5, 3, 2, 1, 4);
 
-const x = [23, 5, 7];
+// const x = [23, 5, 7];
 // add(...x);
 
 // Use any data type, return any data type, short-circuiting
 
-console.log("---------OR---------");
-console.log(3 || "Jonas");
-console.log("" || "Jonas");
-console.log(true || 0);
-console.log(undefined || null);
-console.log(undefined || 0 || "" || "Hello" || 23 || null);
+// console.log("---------OR---------");
+// console.log(3 || "Jonas");
+// console.log("" || "Jonas");
+// console.log(true || 0);
+// console.log(undefined || null);
+// console.log(undefined || 0 || "" || "Hello" || 23 || null);
 
-restaurant.numGuests = 23;
-const guests = restaurant.numGuests ? restaurant.numGuests : 10;
-console.log(guests);
+// restaurant.numGuests = 23;
+// const guests = restaurant.numGuests ? restaurant.numGuests : 10;
+// console.log(guests);
 
-const guests2 = restaurant.numGuests || 10;
-console.log(guests2);
+// const guests2 = restaurant.numGuests || 10;
+// console.log(guests2);
 
-console.log("---------AND---------");
-console.log(0 && "Jonas");
-console.log(7 && "Jonas");
-console.log("Jonas" && 23 && null && "Hello");
+// console.log("---------AND---------");
+// console.log(0 && "Jonas");
+// console.log(7 && "Jonas");
+// console.log("Jonas" && 23 && null && "Hello");
 
-restaurant.orderPasta && restaurant.orderPasta("one", "two", "three");
+// restaurant.orderPasta && restaurant.orderPasta("one", "two", "three");
 
+// console.log("---------AND---------");
 /*// destructuring objects
 restaurant.orderDelivery({
   time: "22:30",

@@ -219,13 +219,43 @@ const restaurant = {
   },
 };
 
-restaurant.numGuests = 0;
-const guests = restaurant.numGuests || 10;
-console.log(guests);
+const rest1 = {
+  name: "capri",
+  numGuest: 20,
+};
 
-// Nullish: null and undefined (not 0 or '')
-const guestCorrect = restaurant.numGuests ?? 10;
-console.log(guestCorrect);
+const rest2 = {
+  name: "La Piazza",
+  owner: "Giovanni Rossi",
+};
+
+// Or assignment operator (IF WE GIVE 0 TO NUMGUEST it will take 0 as null value)
+// rest1.numGuest = rest1.numGuest || 10;
+// rest2.numGuest = rest2.numGuest || 10;
+// rest1.numGuest ||= 10;
+// rest2.numGuest ||= 10;
+
+//if we use nullish assignment operator
+rest1.numGuest ??= 10;
+rest2.numGuest ??= 10;
+
+// rest2.owner = rest2.owner && "<ANONUMOUS>";
+// rest1.owner = rest1.owner && "<ANONUMOUS>";
+
+rest2.owner &&= "<ANONYMOUS>";
+rest1.owner &&= "<ANONYMOUS>";
+
+console.log(rest1);
+console.log(rest2);
+
+// Nullish Coalescing operator
+// restaurant.numGuests = 0;
+// const guests = restaurant.numGuests || 10;
+// console.log(guests);
+
+// // Nullish: null and undefined (not 0 or '')
+// const guestCorrect = restaurant.numGuests ?? 10;
+// console.log(guestCorrect);
 
 // const arr = [7, 8, 9];
 // const badNewArr = [1, 2, arr[0], arr[1], arr[2]];

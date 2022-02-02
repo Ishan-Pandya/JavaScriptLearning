@@ -173,64 +173,64 @@
 
 // console.log(ishan2, ishanCopy);
 
+const weekDays = ["mon", "Tue", "wed", "thu", "fri", "sat", "sun"];
+const openingHours = {
+  [weekDays[3]]: {
+    open: 12,
+    close: 22,
+  },
+  [weekDays[4]]: {
+    open: 11,
+    close: 23,
+  },
+  [weekDays[5]]: {
+    open: 0,
+    close: 24,
+  },
+};
+
 const restaurant = {
   name: "Classico Italiano",
   location: "via Angelo Tavanti 23, Firenze, Italy",
   categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
   starterMenu: ["Focaccia", "Brushetta", "Garlic Bread", "Caprese Salad"],
   mainMenu: ["Pizza", "Pasta", "Risotto"],
-  openingHours: {
-    thu: {
-      open: 12,
-      close: 22,
-    },
-    fri: {
-      open: 11,
-      close: 23,
-    },
-    sat: {
-      open: 0,
-      close: 24,
-    },
-  },
+  // ES6 enhanced object literals
+  openingHours,
 
-  order: function (starterIndex, mainIndex) {
+  // below are the functions
+  order(starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
 
-  orderDelivery: function ({
-    starterIndex = 1,
-    mainIndex = 0,
-    address,
-    time = "20:00",
-  }) {
+  orderDelivery({ starterIndex = 1, mainIndex = 0, address, time = "20:00" }) {
     console.log(
       `order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
     );
   },
 
-  orderPasta: function (ing1, ing2, ing3) {
+  orderPasta(ing1, ing2, ing3) {
     console.log(`Here is your Pasta with ${ing1}, ${ing2}, and ${ing3}`);
   },
 
-  orderPizza: function (mainIngredient, ...otherIngredients) {
+  orderPizza(mainIngredient, ...otherIngredients) {
     console.log(mainIngredient);
     console.log(otherIngredient);
   },
 };
 
 // Looping the menu
-const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
-for (const item of menu) console.log(item);
+// const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+// for (const item of menu) console.log(item);
 
-// Looping with With the index
-for (const item of menu.entries()) {
-  console.log(`${item[0] + 1}: ${item[1]}`);
-}
+// // Looping with With the index
+// for (const item of menu.entries()) {
+//   console.log(`${item[0] + 1}: ${item[1]}`);
+// }
 
-for (const [i, el] of menu.entries()) {
-  console.log(`${i + 1}: ${el}`);
-}
+// for (const [i, el] of menu.entries()) {
+//   console.log(`${i + 1}: ${el}`);
+// }
 // const rest1 = {
 //   name: "capri",
 //   numGuest: 20,

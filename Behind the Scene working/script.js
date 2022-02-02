@@ -219,15 +219,27 @@ const restaurant = {
   },
 };
 
-const rest1 = {
-  name: "capri",
-  numGuest: 20,
-};
+// Looping the menu
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+for (const item of menu) console.log(item);
 
-const rest2 = {
-  name: "La Piazza",
-  owner: "Giovanni Rossi",
-};
+// Looping with With the index
+for (const item of menu.entries()) {
+  console.log(`${item[0] + 1}: ${item[1]}`);
+}
+
+for (const [i, el] of menu.entries()) {
+  console.log(`${i + 1}: ${el}`);
+}
+// const rest1 = {
+//   name: "capri",
+//   numGuest: 20,
+// };
+
+// const rest2 = {
+//   name: "La Piazza",
+//   owner: "Giovanni Rossi",
+// };
 
 // Or assignment operator (IF WE GIVE 0 TO NUMGUEST it will take 0 as null value)
 // rest1.numGuest = rest1.numGuest || 10;
@@ -236,17 +248,17 @@ const rest2 = {
 // rest2.numGuest ||= 10;
 
 //if we use nullish assignment operator
-rest1.numGuest ??= 10;
-rest2.numGuest ??= 10;
+// rest1.numGuest ??= 10;
+// rest2.numGuest ??= 10;
 
 // rest2.owner = rest2.owner && "<ANONUMOUS>";
 // rest1.owner = rest1.owner && "<ANONUMOUS>";
 
-rest2.owner &&= "<ANONYMOUS>";
-rest1.owner &&= "<ANONYMOUS>";
+// rest2.owner &&= "<ANONYMOUS>";
+// rest1.owner &&= "<ANONYMOUS>";
 
-console.log(rest1);
-console.log(rest2);
+// console.log(rest1);
+// console.log(rest2);
 
 // Nullish Coalescing operator
 // restaurant.numGuests = 0;

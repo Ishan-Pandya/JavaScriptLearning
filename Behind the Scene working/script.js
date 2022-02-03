@@ -219,31 +219,55 @@ const restaurant = {
   },
 };
 
-if (restaurant.openingHours.mon) console.log(restaurant.openingHours.mon.open);
-if (restaurant.openingHours.fri) console.log(restaurant.openingHours.fri.open);
+//property Names
+const properties = Object.keys(openingHours);
+console.log(properties);
 
-//with optional chaining
-console.log(restaurant.openingHours.mon?.open);
-console.log(restaurant.openingHours?.mon?.open);
+let openStr = `We are open on ${properties.length} days :`;
 
-const days = ["mon", "Tue", "wed", "thu", "fri", "sat", "sun"];
-for (const day of days) {
-  // console.log(day);1
+for (const day of properties) {
+  openStr += `${day}, `;
+}
+console.log(openStr);
 
-  const open = restaurant.openingHours[day]?.open ?? "closed";
-  console.log(`on ${day}, we open at ${open}`);
+//Property values
+const values = Object.values(openingHours);
+console.log(values);
+
+// Entire object
+const entries = Object.entries(openingHours);
+console.log(entries);
+
+for (const [key, { open, close }] of entries) {
+  // console.log(x);
+  console.log(`on ${key} we open at ${open} and close at ${close}.`);
 }
 
-//methods
+// if (restaurant.openingHours.mon) console.log(restaurant.openingHours.mon.open);
+// if (restaurant.openingHours.fri) console.log(restaurant.openingHours.fri.open);
 
-console.log(restaurant.order?.(0, 1) ?? "Method does not exists");
-console.log(restaurant.orderRisotto?.(0, 1) ?? "Method does not exists");
+// //with optional chaining
+// console.log(restaurant.openingHours.mon?.open);
+// console.log(restaurant.openingHours?.mon?.open);
 
-// Array
-const users = [{ name: "Ishan", email: "ishanpandya@gmail.com" }];
+// const days = ["mon", "Tue", "wed", "thu", "fri", "sat", "sun"];
+// for (const day of days) {
+//   // console.log(day);1
 
-console.log(users[0]?.name ?? "Users array empty");
-console.log(users[0]?.age ?? "Users array dont have age");
+//   const open = restaurant.openingHours[day]?.open ?? "closed";
+//   console.log(`on ${day}, we open at ${open}`);
+// }
+
+// //methods
+
+// console.log(restaurant.order?.(0, 1) ?? "Method does not exists");
+// console.log(restaurant.orderRisotto?.(0, 1) ?? "Method does not exists");
+
+// // Array
+// const users = [{ name: "Ishan", email: "ishanpandya@gmail.com" }];
+
+// console.log(users[0]?.name ?? "Users array empty");
+// console.log(users[0]?.age ?? "Users array dont have age");
 
 // Looping the menu
 // const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];

@@ -340,6 +340,24 @@ printGoals(...game.scored);
 team1 < team2 && console.log("Team 1 is more likely to win");
 team2 < team1 && console.log("Team 1 is more likely to win");
 
-for (const [player] of game.scored) {
-  console.log(`Goal : ${player}`);
+// Challenge two
+
+//1.
+for (const [goal, player] of game.scored.entries()) {
+  console.log(`Goal ${goal + 1}: ${player}`);
 }
+
+//2.
+const odds = Object.values(game.odds);
+let average = 0;
+for (const odd of odds) average += odd;
+average /= odds.length;
+console.log(average);
+
+// 3.
+for (const [team, odd] of Object.entries(game.odds)) {
+  const teamStr = team === `x` ? `draw` : `victory ${game[team]}`;
+  console.log(`odd of ${teamStr} ${odd}`);
+}
+
+//4

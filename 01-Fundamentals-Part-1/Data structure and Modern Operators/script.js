@@ -114,6 +114,5 @@ console.log(answer);
 
 console.log(question.get(question.get("correct") === answer));
 
-convert map to array
+//convert map to array
 console.log([...question]);
-
